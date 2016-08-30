@@ -1,0 +1,14 @@
+{
+  "name": "hola_express",
+  "version": "1.0.0",
+  "description": "Hola Mundo con Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CodigoFacilito",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
