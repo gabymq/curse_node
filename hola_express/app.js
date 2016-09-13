@@ -3,10 +3,12 @@ var express= require("express");
 
 var app= express();
 
+app.set("view engine", "jade");
+
 app.get("/", function(req, res){
 
-	res.send("Hola mundo");
-	res.end();
+	res.render("index", {Hola: "Hola Gaby Bonita"});
+	
 });
 
 app.listen(8080);
