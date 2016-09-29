@@ -2,6 +2,7 @@ var express= require("express");
 
 var bodyParser= require("body-parser");
 var User= require("./models/user").User;
+var session= require("express-session");
 
 var app= express();
 
@@ -30,9 +31,16 @@ app.use("/public", express.static('public'));
 app.use(bodyParser.json());// para peticiones aplication/json
 app.use(bodyParser.urlencoded({extended: true}));
 
+app.use(session({
+	secret:"123byuhbsdah12ub",
+	resave: false,
+	saveUninitialized: false
+}));
+
 app.set("view engine", "pug");
 
 app.get("/", function(req, res){
+	console.log(req.session.user_id);
     res.render("index");
     
 });
@@ -79,13 +87,15 @@ app.post("/users",function(req,res){
 });
 
 app.post("/sessions",function(req,res){
+	console.log(req.body);
+	//User.findId("57eafee4b512b0173bbe91ad",function(err,docs){
+	
+	//});
 
-	User.findId("57eafee4b512b0173bbe91ad",function(err,docs){
-		console.log(docs);
-	});
+	User.findOne({email:req.body.email,password:req.body.password}, function(err,user)
 
-	User.findOne({email:req.body.email,password:req.body.password}, function(err,docs){
-		console.log(docs);
+	{
+		req.session.user_id= user._id;
 		res.send("Hola Mundo");
 	});
    
