@@ -3,6 +3,8 @@ var express= require("express");
 var bodyParser= require("body-parser");
 var User= require("./models/user").User;
 var session= require("express-session");
+var router_app= require("./routes_app");
+var session_middleware= require("./middlewares/session");
 
 var app= express();
 
@@ -67,7 +69,7 @@ app.get("/login", function(req, res){
 app.post("/users",function(req,res){
 
     var user= new User({
-    	                email:req.body.email,
+    	                  email:req.body.email,
                         password: req.body.password, 
                         password_confirmation: req.body.password_confirmation,
                         username: req.body.username
@@ -99,7 +101,8 @@ app.post("/sessions",function(req,res){
 		res.send("Hola Mundo");
 	});
    
-
+app.use("/app",session_middleware);
+app.use("/app",router_app);
 
    /* user.save(function(err,user,numero){
     	if(err){

@@ -1,0 +1,291 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"para",
+				"paramentros"
+			],
+			[
+				"param",
+				"param_data"
+			],
+			[
+				"url",
+				"url_data"
+			],
+			[
+				"html",
+				"html_string"
+			],
+			[
+				"h",
+				"html"
+			],
+			[
+				"S",
+				"SluggableTrait"
+			],
+			[
+				"E",
+				"EloquentSluggable"
+			],
+			[
+				"ba",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 390.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"Colorsublime: Browse Themes"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/gaby/htdocs/curse_node/proyecto_node/views/login.pug",
+		"/home/gaby/htdocs/jsHints/jsEs5Oop.js",
+		"/home/gaby/htdocs/jsHints/figurasGeometricas.js",
+		"/home/gaby/htdocs/curse_node/proyecto_node/app.js",
+		"/home/gaby/htdocs/curse_node/proyecto_node/views/index.pug",
+		"/home/gaby/htdocs/curse_node/proyecto_node/views/signup.pug",
+		"/home/gaby/htdocs/curse_node/proyecto_node/models/user.js",
+		"/home/gaby/htdocs/curse_node/proyecto_node/assets/javascript.js",
+		"/home/gaby/htdocs/curse_node/proyecto_node/views/layout.pug",
+		"/home/gaby/htdocs/curse_node/proyecto_node/public/app.css",
+		"/home/gaby/htdocs/curse_node/routing/views/index.pug",
+		"/home/gaby/htdocs/curse_node/routing/views/form.pug",
+		"/home/gaby/htdocs/curse_node/routing/app.js",
+		"/home/gaby/htdocs/curse_node/routing/package.json",
+		"/home/gaby/htdocs/curse_node/form_params.js",
+		"/home/gaby/htdocs/curse_node/hola_express/views/index.pug",
+		"/home/gaby/htdocs/curse_node/hola_express/app.js",
+		"/home/gaby/htdocs/curse_node/hola_express/package.json",
+		"/home/gaby/htdocs/curse_node/hola_express/view/index.jade",
+		"/home/gaby/htdocs/curse_node/hola_express/views/index.jade",
+		"/home/gaby/htdocs/curse_node/hola_express/index.jade",
+		"/home/gaby/htdocs/curse_node/hola_express/node_modules/views/index.jade",
+		"/home/gaby/htdocs/curse_node/hola_express/node_modules/utils-merge/package.json",
+		"/home/gaby/htdocs/curse_node/hola_express/node_modules/index.jade",
+		"/home/gaby/htdocs/curse_node/param_parser.js",
+		"/home/gaby/htdocs/Fibos/fibonaccis.js",
+		"/home/gaby/htdocs/curse_node/hola_express/node_modules/app.js",
+		"/home/gaby/htdocs/curse_node/.gitignore",
+		"/home/gaby/htdocs/curse_node/render_views.js",
+		"/home/gaby/htdocs/curse_node/index.html",
+		"/home/gaby/htdocs/node_curse/render_vars.js",
+		"/home/gaby/htdocs/node_curse/index.html",
+		"/home/gaby/htdocs/node_curse/hello.js",
+		"/home/gaby/htdocs/node_curse/hola_html.js",
+		"/home/gaby/.homestead/Homestead.yaml",
+		"/etc/hosts",
+		"/home/gaby/htdocs/blog/app/Article.php",
+		"/home/gaby/htdocs/blog/app/Category.php",
+		"/home/gaby/htdocs/blog/database/migrations/2016_03_30_170530_add_tags_table.php",
+		"/home/gaby/htdocs/blog/database/migrations/2016_03_30_164906_add_articles_table.php",
+		"/home/gaby/htdocs/blog/database/migrations/2016_03_30_164307_add_categories_table.php",
+		"/home/gaby/htdocs/sequelize_test/config/config.json",
+		"/home/gaby/htdocs/blog/config/app.php",
+		"/home/gaby/htdocs/blog/database/migrations/2016_04_27_191519_add_slug_articles_table.php",
+		"/home/gaby/htdocs/blog/config/sluggable.php",
+		"/home/gaby/htdocs/blog/database/migrations/2016_04_23_005825_add_slug_to_articles_table.php",
+		"/home/gaby/Desktop/respaldo basedblog.sql",
+		"/home/gaby/htdocs/blog/database/migrations/2016_04_21_190215_add_slug_to_articles_table.php",
+		"/home/gaby/htdocs/blog/app/Providers/AppServiceProvider.php",
+		"/home/gaby/htdocs/blog/composer.json",
+		"/home/gaby/htdocs/blog/resources/views/welcome.blade.php",
+		"/home/gaby/htdocs/blog/resources/views/admin/template/partials/nav.blade.php",
+		"/home/gaby/htdocs/blog/resources/views/admin/template/main.blade.php",
+		"/home/gaby/htdocs/blog/app/Http/routes.php",
+		"/home/gaby/htdocs/blog/resources/views/test/index.blade.php",
+		"/home/gaby/htdocs/blog/public/css/general.css",
+		"/home/gaby/htdocs/blog/app/Http/Controllers/TestController.php",
+		"/home/gaby/htdocs/blog/resources/views/errors/503.blade.php",
+		"/home/gaby/htdocs/blog/resources/views/Test/index.blade.php",
+		"/home/gaby/htdocs/blog/.env",
+		"/home/gaby/htdocs/blog/public/web.config",
+		"/home/gaby/htdocs/blog/config/view.php",
+		"/home/gaby/htdocs/blog/app/Tag.php",
+		"/home/gaby/htdocs/blog/app/Image.php",
+		"/home/gaby/.local/share/Trash/files/2016_04_08_233837_add_articles_table.php",
+		"/home/gaby/htdocs/blog/app/User.php",
+		"/home/gaby/htdocs/blog/database/migrations/2016_04_07_184227_add_articles_tables.php",
+		"/home/gaby/htdocs/blog/database/migrations/2016_04_08_233837_add_articles_table.php",
+		"/home/gaby/htdocs/blog/database/migrations/2016_04_07_185957_add_tags_tables.php",
+		"/home/gaby/htdocs/blog/database/migrations/2016_04_07_185603_add_images_tables.php",
+		"/home/gaby/htdocs/blog/database/migrations/2016_04_07_183307_add_categories_table.php",
+		"/home/gaby/htdocs/blog/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/home/gaby/Homestead/Homestead.yaml",
+		"/home/gaby/Homestead/Homestead.ymal",
+		"/home/gaby/Homestead/Homestead,yaml",
+		"/home/gaby/htdocs/psic/resources/views/welcome.blade.php",
+		"/etc/environment",
+		"/home/gaby/Desktop/index.html",
+		"/home/gaby/Homestead.yaml"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/home/gaby/htdocs/curse_node/hola_express/views"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"index.jade",
+			"req"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 351.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
