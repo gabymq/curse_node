@@ -1,19 +1,28 @@
 extends ./layout.pug
 block Contenido
-  form(action="/users",method="POST")
-    div(class="form-group")
-      label(for="email") Email
-      input(type="text", name="email",placeholder="Email",id="email" class="form-control")
-    div
-      label(for="password") Contraseña
-      input(type="password", name="password",placeholder="Contraseña",id="password" class="form-control")  
-    div
+  div(class="col-md-6 remove-float center-block  big-top-space")
 
-      label(for="password") Confirma tu contraseña
-      input(type="password", name="password_confirmation",placeholder="Confirma Contraseña",id="password" class="form-control")  
-    div
+    form(action="/users",method="POST")
+      div(class="form-group")
+        label(for="email") Email
+        input(type="text", name="email",placeholder="Email",id="email" class="form-control")
+      div
+        label(for="password") Contraseña
+        input(type="password", name="password",placeholder="Contraseña",id="password" class="form-control")  
+      div
 
-      label(for="username") Username
-      input(type="text", name="username",placeholder="Nombre de Usuario",id="username" class="form-control")  
-    div
-      input(type="submit" value="Iniciar Sesion" class="btn btn-info")  
+        label(for="password") Confirma tu contraseña
+        input(type="password", name="password_confirmation",placeholder="Confirma Contraseña",id="password" class="form-control")  
+      div
+
+        label(for="username") Username
+        input(type="text", name="username",placeholder="Nombre de Usuario",id="username" class="form-control")
+
+      div(lcass="row top-space")
+        div(class="col-xs-12 col-md-6")
+       
+     
+          input(type="submit" value="Iniciar Sesion" class="btn btn-info") 
+        div(class="col-xs-12 col-md-6 text-rigth")
+          a(href="/login") Ya tengo una cuenta   
+      

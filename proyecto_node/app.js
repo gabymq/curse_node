@@ -2,14 +2,16 @@ var express= require("express");
 
 var bodyParser= require("body-parser");
 var User= require("./models/user").User;
-var session= require("express-session");
+var cookieSession= require("cookie-session");
 var router_app= require("./routes_app");
 var session_middleware= require("./middlewares/session");
+var methodOverride= require("method-override");
 
 var app= express();
 
 //var mongoose= require("mongoose");
 //var Schema= mongoose.Schema;
+
 
 
 
@@ -19,7 +21,7 @@ var app= express();
 //var userschemaJSON= {
 
 	//email:String,
-	//pasword: String,
+	//pasword: String
 
 //};
 
@@ -33,10 +35,11 @@ app.use("/public", express.static('public'));
 app.use(bodyParser.json());// para peticiones aplication/json
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.use(session({
-	secret:"123byuhbsdah12ub",
-	resave: false,
-	saveUninitialized: false
+app.use(methodOverride("_method"));
+
+app.use(cookieSession({
+  name: "session",
+  keys: ["llave-1", "llave-2"] 
 }));
 
 app.set("view engine", "pug");
@@ -89,16 +92,21 @@ app.post("/users",function(req,res){
 });
 
 app.post("/sessions",function(req,res){
-	console.log(req.body);
-	//User.findId("57eafee4b512b0173bbe91ad",function(err,docs){
-	
-	//});
+  //User.findId("57eafee4b512b0173bbe91ad",function(err,docs){
+  
+  //});
 
-	User.findOne({email:req.body.email,password:req.body.password}, function(err,user)
+  User.findOne({email:req.body.email,password:req.body.password}, function(err,user)
 
-	{
-		req.session.user_id= user._id;
-		res.send("Hola Mundo");
+  {
+		if(user){
+      req.session.user_id= user._id;
+		  res.redirect("/app");
+      
+    } else{
+      console.log('usuario no encontrado');
+      res.redirect("/login");
+    }
 	});
    
 app.use("/app",session_middleware);
